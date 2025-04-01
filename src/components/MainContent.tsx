@@ -87,8 +87,7 @@ export default function MainContent() {
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-bold">Justin Kalski</h1>
             <p className="text-gray-300 text-lg">
-              Computer Science Student & Full-Stack Developer with a passion for building modern, responsive web applications.
-              Focused on creating elegant solutions to complex problems.
+              Computer Science Student & Aspiring Full-Stack Developer with a passion for building modern, responsive web applications. While focused on scalable software solutions, I'm also a cybersecurity hobbyist, curious about how systems behave, uncovering hidden patterns, and designing with security in mind.
             </p>
             <a
               href="/Justin_Kalski_Resume.pdf"

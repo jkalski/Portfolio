@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       animation: {
         blob: "blob 7s infinite",
+        'typing': 'typing 3.5s steps(40, end)',
+        'fade-in': 'fade-in 1s ease-in forwards',
       },
       keyframes: {
         blob: {
@@ -25,6 +27,14 @@ const config: Config = {
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
           },
+        },
+        typing: {
+          'from': { width: '0' },
+          'to': { width: '100%' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
       animationDelay: {
