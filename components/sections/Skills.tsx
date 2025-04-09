@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 // Skill categories and items
 const skillsData = [
@@ -29,7 +30,8 @@ const skillsData = [
       { name: 'Docker', level: 70 },
       { name: 'CI/CD', level: 75 },
       { name: 'Jest', level: 75 },
-      { name: 'Figma', level: 65 }
+      { name: 'Figma', level: 65 },
+      { name: 'Wireshark', level: 80 }
     ]
   }
 ];
@@ -47,7 +49,8 @@ const techIcons = [
   { name: 'Firebase', icon: 'firebase.svg' },
   { name: 'Git', icon: 'git.svg' },
   { name: 'Docker', icon: 'docker.svg' },
-  { name: 'Jest', icon: 'jest.svg' }
+  { name: 'Jest', icon: 'jest.svg' },
+  { name: 'Wireshark', icon: 'wireshark-logo.png' }
 ];
 
 const Skills = () => {
@@ -134,11 +137,14 @@ const Skills = () => {
                   transitionDelay: isVisible ? `${index * 50}ms` : '0ms'
                 }}
               >
-                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-2">
-                  {/* For demo, using a div with first letter. In production, you'll use actual icons */}
-                  <div className="text-emerald-400 text-2xl font-bold">
-                    {tech.name.charAt(0)}
-                  </div>
+                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                  <Image
+                    src={`/images/${tech.icon}`}
+                    alt={tech.name}
+                    width={40}
+                    height={40}
+                    className="object-contain"
+                  />
                 </div>
                 <span className="text-sm text-center">{tech.name}</span>
               </div>

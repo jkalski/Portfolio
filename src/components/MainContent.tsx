@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FiDownload, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import Projects from '@/components/sections/Projects';
 
 const skills = [
   { name: 'Java', icon: '/images/java-logo.png' },
@@ -15,6 +16,7 @@ const skills = [
   { name: 'Git', icon: '/icons/git.svg' },
   { name: 'Docker', icon: '/images/docker_logo_no_text.png' },
   { name: 'Linux', icon: '/images/linux_logo.jpg' },
+  { name: 'Wireshark', icon: '/images/wireshark-logo.png' },
 ];
 
 const education = {
@@ -142,10 +144,10 @@ export default function MainContent() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl flex flex-col items-center gap-2 
+              className={`bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl flex flex-col items-center gap-2 
                 hover:bg-gray-800/70 transition-all duration-300 border border-gray-700
                 hover:shadow-lg hover:shadow-[rgb(0,128,128)]/20 hover:-translate-y-1
-                hover:border-[rgb(0,128,128)]/50 transform hover:scale-105"
+                hover:border-[rgb(0,128,128)]/50 transform hover:scale-105`}
             >
               <Image
                 src={skill.icon}
@@ -160,6 +162,10 @@ export default function MainContent() {
                   skill.name === 'Docker' ? 'w-14 h-10' : ''
                 } ${
                   skill.name === 'JavaScript' || skill.name === 'Next.js' || skill.name === 'React' ? 'w-12 h-12' : ''
+                } ${
+                  skill.name === 'Linux' ? 'w-12 h-12 object-contain' : ''
+                } ${
+                  skill.name === 'Wireshark' ? 'w-16 h-16 object-contain' : ''
                 }`}
               />
               <span className="text-sm font-medium text-gray-300">{skill.name}</span>
@@ -167,6 +173,9 @@ export default function MainContent() {
           ))}
         </div>
       </section>
+
+      {/* Projects Section */}
+      <Projects />
 
       {/* Jobs Section */}
       <section id="jobs" className="space-y-4">

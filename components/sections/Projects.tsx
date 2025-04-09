@@ -5,6 +5,16 @@ import Image from 'next/image';
 const projectsData = [
   {
     id: 1,
+    title: 'Phishing Email Detection',
+    description: 'A real-time phishing email detection web app built with Streamlit and powered by machine learning models trained on 80,000+ emails. Users can paste email content and instantly receive predictions from multiple models on whether the email is phishing or legitimate.',
+    image: '/images/wireshark-logo.png',
+    tags: ['Python', 'scikit-learn', 'TensorFlow', 'Streamlit', 'Machine Learning'],
+    liveUrl: 'https://phishing-detector-feytfxdzppy4tnz3aynpd9.streamlit.app',
+    githubUrl: 'https://github.com/jkalski/phishing-detector',
+    featured: true
+  },
+  {
+    id: 2,
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce application with product listings, cart functionality, user authentication, and payment processing.',
     image: '/images/projects/project1.jpg',
@@ -14,7 +24,7 @@ const projectsData = [
     featured: true
   },
   {
-    id: 2,
+    id: 3,
     title: 'Task Management App',
     description: 'A drag-and-drop task management application with team collaboration features, real-time updates, and data visualization.',
     image: '/images/projects/project2.jpg',
@@ -24,7 +34,7 @@ const projectsData = [
     featured: true
   },
   {
-    id: 3,
+    id: 4,
     title: 'Weather Dashboard',
     description: 'An interactive weather application that fetches and displays weather data, forecasts, and location-based information.',
     image: '/images/projects/project3.jpg',
@@ -34,7 +44,7 @@ const projectsData = [
     featured: false
   },
   {
-    id: 4,
+    id: 5,
     title: 'Social Media Dashboard',
     description: 'A social media analytics dashboard that aggregates and visualizes data from multiple platforms.',
     image: '/images/projects/project4.jpg',
