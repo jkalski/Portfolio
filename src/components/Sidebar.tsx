@@ -68,7 +68,10 @@ export default function Sidebar() {
         z-40
       `}>
         {/* Logo/Name */}
-        <div className="p-6 border-b border-gray-800/50 backdrop-blur-sm">
+        <div 
+          className="p-6 border-b border-gray-800/50 backdrop-blur-sm cursor-pointer hover:bg-gray-800/50 transition-colors"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
           <h1 className="text-xl font-bold">Justin Kalski</h1>
           <p className="text-sm text-gray-400">Full-Stack Developer</p>
         </div>
