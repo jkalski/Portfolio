@@ -83,7 +83,7 @@ export default function MainContent() {
   return (
     <div className="space-y-8">
       {/* Intro Card */}
-      <section className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+      <section id="about" className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="flex-1 space-y-4">
             <h1 className="text-4xl font-bold">Justin Kalski</h1>
