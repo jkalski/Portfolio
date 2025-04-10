@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FiDownload, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import Projects from '@/components/sections/Projects';
 
 const skills = [
   { name: 'Java', icon: '/images/java-logo.png' },
@@ -167,6 +168,9 @@ export default function MainContent() {
           ))}
         </div>
       </section>
+
+      {/* Projects Section */}
+      <Projects />
 
       {/* Jobs Section */}
       <section id="jobs" className="space-y-4">
