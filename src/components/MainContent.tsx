@@ -170,7 +170,9 @@ export default function MainContent() {
       </section>
 
       {/* Projects Section */}
-      <Projects />
+      <section id="projects">
+        <Projects />
+      </section>
 
       {/* Jobs Section */}
       <section id="jobs" className="space-y-4">
