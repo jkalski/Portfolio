@@ -85,7 +85,7 @@ const jobs = [
 
 const MainContent: React.FC = () => {
   return (
-    <div className="space-y-6 pb-8">
+    <div className="p-4 space-y-6 pb-20">
       <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
         <div className="relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28">
           <Image
@@ -95,7 +95,7 @@ const MainContent: React.FC = () => {
             className="rounded-full border-2 border-[rgb(0,128,128)] shadow-lg shadow-[rgb(0,128,128)]/20 hover:shadow-[rgb(0,128,128)]/30 transition-shadow duration-300 object-cover"
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1" id="about">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Justin Kalski
           </h1>
@@ -136,7 +136,7 @@ const MainContent: React.FC = () => {
       </section>
 
       {/* Jobs Section */}
-      <section>
+      <section id="jobs">
         <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Jobs</h2>
         <div className="space-y-4">
           <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
@@ -217,7 +217,7 @@ const MainContent: React.FC = () => {
       </section>
 
       {/* Education Section */}
-      <section>
+      <section id="education">
         <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Education</h2>
         <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
           <h3 className="font-bold text-white">Bachelor of Science in Computer Science</h3>
@@ -229,7 +229,7 @@ const MainContent: React.FC = () => {
       </section>
 
       {/* Projects Section */}
-      <section>
+      <section id="projects">
         <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <ProjectCard
@@ -265,7 +265,7 @@ const MainContent: React.FC = () => {
       </section>
 
       {/* Skills Section */}
-      <section>
+      <section id="skills">
         <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           <SkillCard name="Java" level={85} />

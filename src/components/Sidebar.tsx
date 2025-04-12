@@ -46,7 +46,19 @@ export default function Sidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Close mobile menu when clicking a link
-  const handleLinkClick = () => {
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Only handle internal links with hash
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      
+      if (element) {
+        // Scroll into view with smooth behavior
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    
+    // Close mobile menu
     setIsMobileMenuOpen(false);
   };
 
@@ -88,20 +100,16 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside 
         className={`
-          fixed top-0 left-0 min-h-screen max-h-screen h-full
-          w-[250px] 
+          fixed top-0 left-0 w-[250px] min-h-screen max-h-screen h-full
           border-r border-gray-800/50
           bg-gray-900/95
           backdrop-blur-sm
           transition-transform duration-300 ease-in-out
-          lg:transform-none
+          lg:transform-none lg:relative lg:min-h-0 lg:h-auto
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-          lg:static lg:min-h-[calc(100vh-2rem)]
           z-40
           flex flex-col
-          relative
           overflow-hidden
-          p-0
         `}
       >
         {/* Logo/Name */}
@@ -109,7 +117,7 @@ export default function Sidebar() {
           className="p-3 sm:p-4 border-b border-gray-800/50 backdrop-blur-sm cursor-pointer hover:bg-gray-800/50 transition-colors duration-200"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            handleLinkClick();
+            setIsMobileMenuOpen(false);
           }}
         >
           <h1 className="text-base sm:text-lg font-bold">Justin Kalski</h1>
@@ -121,14 +129,14 @@ export default function Sidebar() {
           <ul className="space-y-1">
             {navItems.map((item) => (
               <li key={item.label}>
-                <Link
+                <a
                   href={item.href}
-                  onClick={handleLinkClick}
+                  onClick={(e) => handleLinkClick(e, item.href)}
                   className="flex items-center px-2 sm:px-3 py-1.5 sm:py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-200"
                 >
                   <item.icon className="w-4 h-4 mr-2" />
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -143,7 +151,7 @@ export default function Sidebar() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleLinkClick}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="p-1.5 text-gray-400 hover:text-white hover:bg-gray-800/30 rounded-lg transition-all duration-200"
                 aria-label={link.label}
               >

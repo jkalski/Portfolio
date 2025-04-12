@@ -23,9 +23,7 @@ export default function RootLayout({
         
         {/* Main content */}
         <div className="relative z-10 min-h-screen w-full max-w-[100vw] overflow-x-hidden">
-          <main className="mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-            {children}
-          </main>
+          {children}
         </div>
       </body>
     </html>
