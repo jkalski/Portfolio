@@ -26,7 +26,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           src={image}
           alt={title}
           fill
-          className="object-cover transition-transform duration-300 hover:scale-105"
+          className={`object-cover transition-transform duration-300 hover:scale-105 ${
+            title === 'EqualCare' || title === 'JustFlix' ? 'object-[center_30%]' : 'object-[center_top]'
+          }`}
+          style={{ 
+            objectPosition: title === 'EqualCare' || title === 'JustFlix' ? 'center 30%' : 'center top' 
+          }}
         />
       </div>
       <div className="p-3 flex-1 flex flex-col">
@@ -52,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 className="flex items-center gap-1 text-xs bg-cyan-600 hover:bg-cyan-700 text-white px-2 py-1 rounded transition-colors"
               >
                 <FiExternalLink size={12} />
-                Live Demo
+                {title === 'LynkMe Business Card Scanner' ? 'More Information' : 'Live Demo'}
               </a>
             )}
             {githubLink && (

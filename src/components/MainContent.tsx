@@ -236,22 +236,22 @@ const MainContent: React.FC = () => {
             title="Phishing Email Detection App"
             description="A real-time phishing email detection web app built with Streamlit and powered by machine learning models trained on 80,000+ emails. Users can paste email content and get instant predictions from multiple models."
             technologies={['Python', 'Streamlit', 'Scikit-learn', 'TensorFlow']}
-            image="/images/project1.jpg"
+            image="/images/projects/project1.jpg"
             demoLink="https://phishing-detector-feytfxdzppy4tnz3aynpd9.streamlit.app"
             githubLink="https://github.com/jkalski/phishing-email-detection"
           />
           <ProjectCard
-            title="Code Quality Dashboard"
-            description="A web application for analyzing Python code quality using Pylint. Features include code analysis, linting results, and a modern web interface to help developers improve their code."
-            technologies={['Python', 'Pylint', 'Django', 'CI/CD']}
-            image="/images/project2.jpg"
-            githubLink="https://github.com/jkalski/code-quality-tool"
+            title="EqualCare"
+            description="A healthcare-focused web application promoting fairness in medical research datasets. Features include CSV upload handling, automated gender bias analysis with pandas, AI-powered insights generation via OpenRouter, and a RAG system using ChromaDB and SentenceTransformer for research paper integration."
+            technologies={['FastAPI', 'React', 'Python', 'Pandas', 'OpenRouter', 'ChromaDB', 'SentenceTransformer', 'Tailwind CSS', 'AI/ML', 'Docker']}
+            image="/images/projects/equalcare.png"
+            githubLink="https://github.com/jkalski/equalcare"
           />
           <ProjectCard
             title="Justflix"
             description="A Netflix clone built with the MERN stack. Features include user authentication, responsive UI, movie/TV show browsing, search functionality, and user profiles."
             technologies={['MongoDB', 'Express', 'React', 'Node.js']}
-            image="/images/project3.jpg"
+            image="/images/projects/justflix.gif"
             demoLink="https://justflix.onrender.com/"
             githubLink="https://github.com/jkalski/Justflix"
           />
@@ -259,7 +259,8 @@ const MainContent: React.FC = () => {
             title="LynkMe Business Card Scanner"
             description="A mobile-friendly web app that allows users to upload or capture business cards, then extract and autofill contact data using OCR and AI. Includes image preprocessing, text extraction using Tesseract, and structured data delivery via webhooks."
             technologies={['OCR', 'Tesseract', 'AI', 'Webhooks']}
-            image="/images/project4.jpg"
+            image="/images/projects/project4.jpg"
+            demoLink="https://www.lynkmesmartcards.com/features-lynkme-card"
           />
         </div>
       </section>

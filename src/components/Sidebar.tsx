@@ -102,7 +102,7 @@ export default function Sidebar() {
         className={`
           fixed top-0 left-0 w-[250px] min-h-screen max-h-screen h-full
           border-r border-gray-800/50
-          bg-gray-900/95
+          bg-gray-900/70
           backdrop-blur-sm
           transition-transform duration-300 ease-in-out
           lg:transform-none lg:relative lg:min-h-0 lg:h-auto
@@ -143,7 +143,7 @@ export default function Sidebar() {
         </nav>
 
         {/* Social Links - positioned at the absolute bottom */}
-        <div className="sticky bottom-0 left-0 right-0 w-full p-2 sm:p-3 border-t border-gray-800/50 bg-gray-900/95 mt-auto">
+        <div className="sticky bottom-0 left-0 right-0 w-full p-2 sm:p-3 border-t border-gray-800/50 bg-gray-900/70 mt-auto">
           <div className="flex justify-center space-x-3 sm:space-x-4">
             {socialLinks.map((link) => (
               <a

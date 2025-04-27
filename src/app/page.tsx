@@ -4,8 +4,8 @@ import { FiMinus, FiMaximize2, FiX } from 'react-icons/fi';
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-950 p-1 sm:p-3 md:p-4 lg:p-6">
-      <div className="w-full h-[98vh] sm:h-auto sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto bg-gray-900/90 backdrop-blur-xl rounded-xl sm:rounded-2xl shadow-2xl overflow-hidden border border-gray-800/50">
+    <div className="flex items-center justify-center min-h-screen bg-transparent p-1 sm:p-3 md:p-4 lg:p-6">
+      <div className="w-full h-[98vh] sm:h-auto sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto bg-gray-900/70 backdrop-blur-xl rounded-xl sm:rounded-2xl shadow-2xl overflow-hidden border border-gray-800/50">
         {/* Window Header */}
         <div className="flex items-center justify-between px-3 py-2 bg-gray-900/95 border-b border-gray-800/50 backdrop-blur-sm">
           <div className="flex items-center space-x-2">
