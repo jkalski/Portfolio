@@ -245,6 +245,7 @@ const MainContent: React.FC = () => {
             description="A healthcare-focused web application promoting fairness in medical research datasets. Features include CSV upload handling, automated gender bias analysis with pandas, AI-powered insights generation via OpenRouter, and a RAG system using ChromaDB and SentenceTransformer for research paper integration."
             technologies={['FastAPI', 'React', 'Python', 'Pandas', 'OpenRouter', 'ChromaDB', 'SentenceTransformer', 'Tailwind CSS', 'AI/ML', 'Docker']}
             image="/images/projects/equalcare.png"
+            demoLink="https://equalcare-production.up.railway.app/"
             githubLink="https://github.com/jkalski/equalcare"
           />
           <ProjectCard

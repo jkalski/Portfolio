@@ -36,7 +36,7 @@ export interface Project {
       description: 'A healthcare-focused web application promoting fairness in medical research datasets. Features include CSV upload handling, automated gender bias analysis with pandas, AI-powered insights generation via OpenRouter, and a RAG system using ChromaDB and SentenceTransformer for research paper integration. Built with FastAPI backend and React frontend with Tailwind CSS.',
       image: '/images/projects/equalcare.png',
       tags: ['FastAPI', 'React', 'Python', 'Pandas', 'OpenRouter', 'ChromaDB', 'SentenceTransformer', 'Tailwind CSS', 'AI/ML', 'Docker'],
-      liveUrl: 'https://equalcare.example.com',
+      liveUrl: 'https://equalcare-production.up.railway.app/',
       githubUrl: 'https://github.com/jkalski/equalcare',
       featured: true
     },
