@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Justin Kalski's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and Tailwind CSS, showcasing my projects, skills, and professional journey.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern Design**: Clean and responsive UI built with Tailwind CSS
+- **Project Showcase**: Highlighting key projects with live demos and GitHub links
+- **Skills Section**: Visual representation of technical skills and expertise
+- **Experience Timeline**: Professional experience and education history
+- **Interactive Elements**: Smooth animations and transitions for better user experience
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons
+- **Deployment**: Vercel
+- **Type Safety**: TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Projects Showcased
 
-## Learn More
+1. **EqualCare**
+   - A healthcare-focused web application promoting fairness in medical research datasets
+   - [Live Demo](https://equalcare-production.up.railway.app/)
+   - [GitHub Repository](https://github.com/jkalski/equalcare)
 
-To learn more about Next.js, take a look at the following resources:
+2. **Phishing Email Detection App**
+   - Real-time phishing email detection using machine learning
+   - [Live Demo](https://phishing-detector-feytfxdzppy4tnz3aynpd9.streamlit.app)
+   - [GitHub Repository](https://github.com/jkalski/phishing-email-detection)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Justflix**
+   - A Netflix clone built with the MERN stack
+   - [Live Demo](https://justflix.onrender.com/)
+   - [GitHub Repository](https://github.com/jkalski/Justflix)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📞 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email**: [jkalski.cty@gmail.com](mailto:jkalski.cty@gmail.com)
+- **LinkedIn**: [linkedin.com/in/justinkalski](https://www.linkedin.com/in/justinkalski/)
+- **GitHub**: [github.com/jkalski](https://github.com/jkalski)
