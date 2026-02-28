@@ -27,10 +27,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           alt={title}
           fill
           className={`object-cover transition-transform duration-300 hover:scale-105 ${
-            title === 'EqualCare' || title === 'JustFlix' ? 'object-[center_30%]' : 'object-[center_top]'
+            title === 'EqualCare' || title === 'Justflix' || title === 'OptiMind Labs – HVAC Optimization Simulation Engine' ? 'object-[center_30%]' : 'object-[center_top]'
           }`}
           style={{ 
-            objectPosition: title === 'EqualCare' || title === 'JustFlix' ? 'center 30%' : 'center top' 
+            objectPosition: title === 'EqualCare' || title === 'Justflix' || title === 'OptiMind Labs – HVAC Optimization Simulation Engine' ? 'center 30%' : 'center top' 
           }}
         />
       </div>

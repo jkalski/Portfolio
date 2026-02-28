@@ -39,24 +39,16 @@ export default function Projects() {
             </a>
           </div>
           <div className="p-6 bg-white/5 backdrop-blur-sm rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 text-white">Justflix</h3>
-            <p className="mb-4 text-gray-300">A Netflix clone built with the MERN stack (MongoDB, Express, React, Node.js) and Tailwind CSS. Features include user authentication, responsive UI, movie/TV show browsing, search functionality, and user profiles.</p>
+            <h3 className="text-xl font-semibold mb-2 text-white">OptiMind Labs – HVAC Optimization Simulation Engine</h3>
+            <p className="mb-4 text-gray-300">Designed and implemented a custom HVAC simulation environment to model temperature control and energy usage dynamics. Built structured data collection pipelines to generate training trajectories stored in validated CSV datasets. Developed a modular reinforcement learning training workflow separating environment logic, data processing, and model training components. Implemented reproducible experiment configuration and dataset validation to ensure consistent training results. Structured project architecture for scalability, maintainability, and clear separation of system responsibilities.</p>
             <div className="flex gap-4">
               <a 
-                href="https://github.com/jkalski/Justflix" 
+                href="https://github.com/SpencerLevine9/OptiMind_Labs" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 bg-primary hover:bg-primary-dark rounded-lg transition-colors"
               >
                 View on GitHub
-              </a>
-              <a 
-                href="https://justflix.onrender.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors"
-              >
-                Live Demo
               </a>
             </div>
           </div>

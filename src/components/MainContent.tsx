@@ -44,40 +44,43 @@ const education = {
 
 const jobs = [
   {
-    company: 'Lynkme Cards',
-    role: 'Back-End Developer Intern',
-    period: 'Feb 2025 - Present',
-    description: 'Lynkme Cards is a business card scanning and data management platform in Northridge, CA.',
+    company: 'Los Angeles Department of Water and Power (LADWP)',
+    role: 'IT Support Technician / Student Professional Worker',
+    period: 'July 2025 - Present',
+    description: 'Provide Tier 1/2 enterprise technical support across Windows-based infrastructure in a 13,000+ user environment.',
     achievements: [
-      'Developed backend services to process, validate, and integrate OCR-extracted data from scanned business cards',
-      'Implemented secure API endpoints for data transmission, improving data validation efficiency by 30%',
-      'Optimized server-side logic for handling image processing workflows, reducing response time by 40%',
-      'Assisted in deploying scalable backend architecture using Node.js, MongoDB, and SQL',
-      'Wrote and analyzed SQL queries for performance tracking and data processing',
+      'Provide Tier 1/2 enterprise technical support across Windows-based infrastructure in a 13,000+ user environment',
+      'Administer Active Directory accounts, group policies, and role-based access controls to maintain secure system access',
+      'Support enterprise platforms including SharePoint, Microsoft Teams, and Cornerstone LMS, resolving authentication and integration issues',
+      'Contribute to MuleSoft integration initiatives by assisting with system mapping, requirements analysis, and cross-system data validation',
+      'Document technical workflows and troubleshooting procedures to improve operational consistency',
+    ],
+    logo: '/images/ladwp_logo.png',
+  },
+  {
+    company: 'LynkMe Smart Cards',
+    role: 'Software Engineer Intern (Backend)',
+    period: 'Feb 2025 - Present',
+    description: 'LynkMe Smart Cards is a business card scanning and data management platform in Northridge, CA.',
+    achievements: [
+      'Designed and implemented backend services to process and normalize OCR-extracted business card data into structured relational schemas',
+      'Developed secure RESTful APIs with server-side validation and authentication controls to support real-time data ingestion',
+      'Engineered SQL-based data pipelines for structured storage and retrieval',
+      'Optimized asynchronous image-processing workflows, reducing average response time by ~40%',
+      'Strengthened backend validation logic, improving data integrity and reducing processing errors',
     ],
     logo: '/images/lynkme_cards_logo.jpg',
   },
   {
-    company: 'Meta+Lab',
-    role: 'Front-End Development Intern',
-    period: 'Summer 2018, 2019',
-    description: 'Meta+Lab is a development agency in Northridge, CA, focused on creating innovative digital experiences.',
-    achievements: [
-      'Developed interactive web applications using React and modern JavaScript frameworks',
-      'Collaborated with designers and backend engineers to improve UI/UX and application responsiveness',
-      'Optimized website performance, improving load times by 20%',
-    ],
-    logo: '/images/metalab.jpg',
-  },
-  {
     company: 'Knockout Investing',
-    role: 'Business Analyst / IT Intern',
+    role: 'Technical Business Systems Intern',
     period: 'May 2020 - Feb 2021',
     description: 'Knockout Investing is a remote financial technology company providing online financial programs.',
     achievements: [
-      'Developed and launched a responsive business website for an online financial program',
-      'Automated administrative workflows using Google Workspace and scripts, streamlining daily operations',
-      'Conducted data analysis on website traffic, leading to a 15% increase in engagement',
+      'Designed and launched a responsive web platform supporting an online financial education program',
+      'Automated internal workflows using Google Workspace APIs and scripting to reduce manual administrative effort',
+      'Analyzed user engagement data to identify optimization opportunities, increasing interaction by ~15%',
+      'Provided technical support for CRM and internal data systems',
     ],
     logo: '/images/knockout_logo_half.png',
   }
@@ -135,62 +138,90 @@ const MainContent: React.FC = () => {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education">
+        <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Education</h2>
+        <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
+          <h3 className="font-bold text-white">Bachelor of Science in Computer Science</h3>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+            <p className="text-cyan-500 font-medium">California State University Northridge</p>
+            <p className="text-sm text-gray-400">August 2022 - Present</p>
+          </div>
+        </div>
+      </section>
+
       {/* Jobs Section */}
       <section id="jobs">
         <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Jobs</h2>
         <div className="space-y-4">
           <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
-            <h3 className="font-bold text-white">Back-End Developer Intern</h3>
+            <h3 className="font-bold text-white">IT Support Technician / Student Professional Worker</h3>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-              <p className="text-cyan-500 font-medium">Lynkme Cards</p>
+              <p className="text-cyan-500 font-medium">Los Angeles Department of Water and Power (LADWP)</p>
+              <p className="text-sm text-gray-400">July 2025 - Present</p>
+            </div>
+            <p className="mt-2 text-gray-300 text-sm">
+              Provide Tier 1/2 enterprise technical support across Windows-based infrastructure in a 13,000+ user environment.
+            </p>
+            <ul className="mt-2 space-y-1">
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Provide Tier 1/2 enterprise technical support across Windows-based infrastructure in a 13,000+ user environment</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Administer Active Directory accounts, group policies, and role-based access controls to maintain secure system access</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Support enterprise platforms including SharePoint, Microsoft Teams, and Cornerstone LMS, resolving authentication and integration issues</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Contribute to MuleSoft integration initiatives by assisting with system mapping, requirements analysis, and cross-system data validation</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Document technical workflows and troubleshooting procedures to improve operational consistency</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
+            <h3 className="font-bold text-white">Software Engineer Intern (Backend)</h3>
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+              <p className="text-cyan-500 font-medium">LynkMe Smart Cards</p>
               <p className="text-sm text-gray-400">Feb 2025 - Present</p>
             </div>
             <p className="mt-2 text-gray-300 text-sm">
-              Lynkme Cards is a business card scanning and data management platform in Northridge, CA.
+              LynkMe Smart Cards is a business card scanning and data management platform in Northridge, CA.
             </p>
             <ul className="mt-2 space-y-1">
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Developed backend services to process, validate, and integrate OCR-extracted data from scanned business cards</span>
+                <span>Designed and implemented backend services to process and normalize OCR-extracted business card data into structured relational schemas</span>
               </li>
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Implemented secure API endpoints for data transmission, improving data validation efficiency by 30%</span>
+                <span>Developed secure RESTful APIs with server-side validation and authentication controls to support real-time data ingestion</span>
               </li>
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Optimized server-side logic for handling image processing workflows, reducing response time by 40%</span>
+                <span>Engineered SQL-based data pipelines for structured storage and retrieval</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Optimized asynchronous image-processing workflows, reducing average response time by ~40%</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Strengthened backend validation logic, improving data integrity and reducing processing errors</span>
               </li>
             </ul>
           </div>
 
           <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
-            <h3 className="font-bold text-white">Front-End Development Intern</h3>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-              <p className="text-cyan-500 font-medium">Meta+Lab</p>
-              <p className="text-sm text-gray-400">Summer 2018, 2019</p>
-            </div>
-            <p className="mt-2 text-gray-300 text-sm">
-              Meta+Lab is a development agency in Northridge, CA, focused on creating innovative digital experiences.
-            </p>
-            <ul className="mt-2 space-y-1">
-              <li className="text-sm text-gray-400 flex items-start">
-                <span className="text-cyan-500 mr-2">•</span>
-                <span>Developed interactive web applications using React and modern JavaScript frameworks</span>
-              </li>
-              <li className="text-sm text-gray-400 flex items-start">
-                <span className="text-cyan-500 mr-2">•</span>
-                <span>Collaborated with designers and backend engineers to improve UI/UX and application responsiveness</span>
-              </li>
-              <li className="text-sm text-gray-400 flex items-start">
-                <span className="text-cyan-500 mr-2">•</span>
-                <span>Optimized website performance, improving load times by 20%</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
-            <h3 className="font-bold text-white">Business Analyst / IT Intern</h3>
+            <h3 className="font-bold text-white">Technical Business Systems Intern</h3>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
               <p className="text-cyan-500 font-medium">Knockout Investing</p>
               <p className="text-sm text-gray-400">May 2020 - Feb 2021</p>
@@ -201,29 +232,21 @@ const MainContent: React.FC = () => {
             <ul className="mt-2 space-y-1">
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Developed and launched a responsive business website for an online financial program</span>
+                <span>Designed and launched a responsive web platform supporting an online financial education program</span>
               </li>
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Automated administrative workflows using Google Workspace and scripts, streamlining daily operations</span>
+                <span>Automated internal workflows using Google Workspace APIs and scripting to reduce manual administrative effort</span>
               </li>
               <li className="text-sm text-gray-400 flex items-start">
                 <span className="text-cyan-500 mr-2">•</span>
-                <span>Conducted data analysis on website traffic, leading to a 15% increase in engagement</span>
+                <span>Analyzed user engagement data to identify optimization opportunities, increasing interaction by ~15%</span>
+              </li>
+              <li className="text-sm text-gray-400 flex items-start">
+                <span className="text-cyan-500 mr-2">•</span>
+                <span>Provided technical support for CRM and internal data systems</span>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Education Section */}
-      <section id="education">
-        <h2 className="text-xl font-bold text-white mb-3 border-b border-gray-800 pb-1">Education</h2>
-        <div className="bg-gray-800/50 hover:bg-gray-800/70 border border-gray-700/50 rounded-lg p-4 transition-all duration-300">
-          <h3 className="font-bold text-white">Bachelor of Science in Computer Science</h3>
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-            <p className="text-cyan-500 font-medium">California State University Northridge</p>
-            <p className="text-sm text-gray-400">August 2022 - Present</p>
           </div>
         </div>
       </section>
@@ -249,12 +272,11 @@ const MainContent: React.FC = () => {
             githubLink="https://github.com/jkalski/equalcare"
           />
           <ProjectCard
-            title="Justflix"
-            description="A Netflix clone built with the MERN stack. Features include user authentication, responsive UI, movie/TV show browsing, search functionality, and user profiles."
-            technologies={['MongoDB', 'Express', 'React', 'Node.js']}
-            image="/images/projects/justflix.gif"
-            demoLink="https://justflix.onrender.com/"
-            githubLink="https://github.com/jkalski/Justflix"
+            title="OptiMind Labs – HVAC Optimization Simulation Engine"
+            description="Designed and implemented a custom HVAC simulation environment to model temperature control and energy usage dynamics. Built structured data collection pipelines to generate training trajectories stored in validated CSV datasets. Developed a modular reinforcement learning training workflow separating environment logic, data processing, and model training components. Implemented reproducible experiment configuration and dataset validation to ensure consistent training results. Structured project architecture for scalability, maintainability, and clear separation of system responsibilities."
+            technologies={['Python', 'Reinforcement Learning', 'Data Pipelines']}
+            image="/images/projects/optimind.png"
+            githubLink="https://github.com/SpencerLevine9/OptiMind_Labs"
           />
           <ProjectCard
             title="LynkMe Business Card Scanner"

@@ -11,7 +11,7 @@ export default function About() {
           </p>
           <p>
             I focus primarily on web development, with a growing stack that includes JavaScript, Python, HTML/CSS, MongoDB, and REST APIs. 
-            I've tackled both frontend and backend challenges, especially through my internship at LynkMe Cards, where I engineered OCR-powered tools using Tesseract, OpenCV, and Webhooks to bridge backend intelligence with seamless frontend experiences.
+            I've tackled both frontend and backend challenges through roles at LADWP and an internship at LynkMe Smart Cards, where I engineered OCR-powered tools using Tesseract, OpenCV, and Webhooks to bridge backend intelligence with seamless frontend experiences.
           </p>
           <p>
             But my passion doesn't stop at software—I have a strong interest in cybersecurity, particularly where it intersects with software engineering. 

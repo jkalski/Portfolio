@@ -30,10 +30,9 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS, show
    - [Live Demo](https://phishing-detector-feytfxdzppy4tnz3aynpd9.streamlit.app)
    - [GitHub Repository](https://github.com/jkalski/phishing-email-detection)
 
-3. **Justflix**
-   - A Netflix clone built with the MERN stack
-   - [Live Demo](https://justflix.onrender.com/)
-   - [GitHub Repository](https://github.com/jkalski/Justflix)
+3. **OptiMind Labs – HVAC Optimization Simulation Engine**
+   - HVAC simulation & reinforcement learning workflow with structured data pipelines
+   - [GitHub Repository](https://github.com/SpencerLevine9/OptiMind_Labs)
 
 ## 📝 License
 
